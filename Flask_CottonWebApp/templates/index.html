@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    h1 {text-align: center;color: black;font-size: 40px;position: relative;bottom: -40px;}
+    h2 {text-align: center;color: black;font-size: 40px;position: relative;bottom: -30px;}
+    body {background-image: url("https://webstockreview.net/images/cotton-clipart-cotton-plant-18.png");background-repeat: no-repeat; background-size: 100% 200%;}
+    form button {
+	 appearance: none;
+	 outline: 0;
+	 background-color: black;
+	 border: 0;
+	 padding: 10px 15px;
+	 color: #fff;
+	 border-radius: 3px;
+	 width: 250px;
+	 cursor: pointer;
+	 font-size: 18px;
+	 transition-duration: 0.25s;
+       position: relative;
+       bottom: -50px
+}
+ form button:hover {
+	 background-color: #000;
+}
+label {
+    font-size: 30px;
+    position: relative;
+    left: -30px;
+    bottom: -30px;
+}
+input {
+     font-size: 20px;
+     position: relative;
+     left: 60px;
+     bottom: -40px;
+}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   </style>
+ </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h1 class="mt-5">Cotton Leaf Disease Detection Using Machine Learning and Image Processing</h1>
+                <h2>Upload Infected Cotton Leaf</h2>
+                <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data" align="center" class = "form">
+                   <label for="images"><font color="black"><b>Upload Image:-</b></font></label><br><br>
+                   <input type="file" id="images" name="images" style="color:black`;" accept="image/*" required><br><br><br>
+                   <button class="btn btn-primary btn-lg " onclick="detect = 'detect';">Detect & Identify</button>
+            </div>
+        </div>
+    </div>
+    </body>
+
+
+</html>

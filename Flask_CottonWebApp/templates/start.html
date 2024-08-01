@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui;
+}
+body {
+  background: url(https://img.freepik.com/free-photo/row-growing-green-cotton-field-india_54391-2406.jpg?w=2000);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.wrapper {
+  margin: 0 15px;
+  max-width: 960px;
+}
+
+h1 {
+  color: #17202A;
+  position: relative;
+  font-size: 30px;
+  top: 0px;
+  right: 70px;
+  animation: title 2s ease-in forwards;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes title {
+  0% {top: -100vh;}
+  100% {top: 0;}
+}
+
+.content {
+  color: #17202A;
+  margin: 25px 0 50px 0;
+  font-size: 20px;
+  position: relative;
+  bottom: 0;
+  animation: content 2s ease-in forwards;
+}
+
+@keyframes content {
+  0% {bottom: -100vh;}
+  100% {bottom: 0;}
+}
+
+.btn {
+  border: 2px solid #000;
+  color: #000;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .3s linear;
+  animation: btn 1.5s ease-in 1.5s forwards;
+}
+
+@keyframes btn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+</style>
+<body>
+
+<div class="wrapper">
+<h1>Cotton Leaf Disease Detection Using Machine Learning and Image Processing</h1>
+
+<p class="content"><b>
+India is an agriculture country and above seventy percent of our population depends on the agriculture. 
+One-third of our national income comes from agriculture. 
+Agriculturalist are facing loss due to various crop disease and 
+it becomes tedious to cultivators to monitor the crop regularly when the cultivated area is huge(acres).
+So the plant disease detection plays an very important role in agriculture field. 
+Timely and accurate disease detection is important for the loss caused due to crop diseases which affects adversely on crop quality and yield.
+Early diagnosis and intervention can reduce the loss of plant disease and reduce the unnecessary drug usage. Earlier, 
+automatic detection of plant disease was performed by image processing. 
+For disease detection and classification we are proposing machine learning mechanisms and image processing tools. 
+Crop disease will be detected through various stages of image processing such as image acquisition, image pre-processing, 
+image feature extraction & feature classification.  For image feature extraction we will be use image global feature extraction technique.
+</b></p>
+<a href="{{ url_for('login') }}" class="btn"><b>Get Started</b></a>
+</div>
+
+</body>
+</html>

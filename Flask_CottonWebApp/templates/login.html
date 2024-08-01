@@ -1,0 +1,282 @@
+<html>
+
+<head>
+<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet">
+<style>
+body {
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:black;
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(#333,#000);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+h2 {
+	 font-size: 30px;
+	 align-text :center;
+	 margin-left:140px;
+	 transition-duration: 1s;
+	 transition-timing-function: ease-in-put;
+       clear: both;
+       display: inline-block;
+       overflow: hidden;
+       white-space: nowrap;
+       position: relative;
+       left: 10px;
+	 }
+body {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 color: white;
+	 font-weight: 300;
+	 position: absolute;
+	 top: 35%;
+	 left: 0;
+	 width: 100%;
+	 height: 400px;
+	 margin-top: -200px;
+	 overflow: hidden;
+}
+ body ::-webkit-input-placeholder {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 color: white;
+	 font-weight: 300;
+}
+ body :-moz-placeholder {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 color: white;
+	 opacity: 1;
+	 font-weight: 300;
+}
+ body ::-moz-placeholder {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 color: white;
+	 opacity: 1;
+	 font-weight: 300;
+}
+ body :-ms-input-placeholder {
+	 font-family: 'Source Sans Pro', sans-serif;
+	 color: white;
+	 font-weight: 300;
+}
+
+ .wrapper.form-success .container h1 {
+	 transform: translateY(85px);
+}
+ .container {
+	 max-width: 600px;
+	 margin: 0 auto;
+	 padding: 80px 0;
+	 height: 400px;
+	 text-align: center;
+}
+ .container h1 {
+       position: relative;
+       top: 20px;
+       left: 5px;
+	 font-size: 40px;
+	 transition-duration: 1s;
+	 transition-timing-function: ease-in-put;
+	 font-weight: 200;
+}
+ form {
+	 padding: 20px 0;
+	 position: relative;
+	 z-index: 2;
+}
+ form input {
+	 display: block;
+	 appearance: none;
+	 outline: 0;
+	 border: 1px solid rgba(255,255,255,0.4);
+	 background-color: rgba(255,255,255,0.2);
+	 width: 250px;
+	 border-radius: 3px;
+	 padding: 10px 15px;
+	 margin: 0 auto 10px auto;
+	 text-align: center;
+	 font-size: 18px;
+	 color: white;
+	 transition-duration: 0.25s;
+	 font-weight: 300;
+}
+ form input:hover {
+	 background-color: rgba(255,255,255,0.4);
+}
+ form input:focus {
+	 background-color: white;
+	 width: 300px;
+	 color: #000;
+}
+ button {
+	 appearance: none;
+	 outline: 0;
+	 background-color: white;
+	 border: 0;
+	 padding: 10px 15px;
+	 color: #000;
+	 border-radius: 3px;
+	 width: 250px;
+	 cursor: pointer;
+	 font-size: 18px;
+	 transition-duration: 0.25s;
+}
+ button:hover {
+	 background-color: #f5f7f9;
+}
+
+p{
+font-size:19px;
+color: #fff;
+position: relative;
+bottom: 20px;
+}
+a{
+    position: relative;
+    bottom: 20px;
+}
+.head {
+    position: relative;
+    bottom: 0px;
+}
+</style>
+</head>
+<body>
+<section>
+     <div class="leaf">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf2">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     </section>
+
+<div class="head">
+<h2>Cotton Leaf Disease Detection Using Machine Learning and Image Processing</h2>
+</div>
+<div class="wrapper">
+	<div class="container">
+		<h1>Login</h1>
+		<form action="{{ url_for('login') }}" method="post" class="form">
+			<input type="text" id="username" name="username" placeholder="Username">
+			<input type="password" id="password"  name="password" placeholder="Password">
+			<button type="submit" id="login-button">Login</button>
+		</form>
+                <p> Don't have an account ?</p>
+                <a href="{{url_for('register')}}">
+                <button>Sign Up</button></a>
+                <div class="msg">{{ msg }}</div>
+	</div>
+</div>
+
+</body>
+</html>

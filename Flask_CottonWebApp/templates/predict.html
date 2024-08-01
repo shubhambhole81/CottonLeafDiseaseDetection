@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Prediction</title>
+      <style>
+         h1 {text-align: center;color: black;font-size: 40px;position: relative;bottom: 50px;}
+         .defect {text-align: center;color: black;font-size: 40px;position: relative;bottom: 30px;right: 30px;}
+         .type {text-align: center;color: black;font-size: 40px;position: relative;bottom: 90px;left: 55px;}
+         .prevent {text-align: center;color: black;font-size: 40px;position: relative;bottom: 70px;right: 600px;}
+          p {text-align: center;color: black;font-size: 30px;position: relative;bottom: 50px;}
+         body {background-image: url("https://webstockreview.net/images/cotton-clipart-cotton-plant-18.png");background-repeat: no-repeat; background-size: 100% 100%;}
+         button {
+	 appearance: none;
+	 outline: 0;
+	 background-color: #000;
+	 border: 0;
+	 padding: 10px 15px;
+	 color: #fff;
+	 border-radius: 3px;
+	 width: 250px;
+	 cursor: pointer;
+	 font-size: 18px;
+	 transition-duration: 0.25s;
+       }
+       button:hover {background-color: #000;}
+       a {position: relative; left: 1100px;bottom: 80px;}
+      </style>
+  <head>
+  <body>
+    <br><br><br><br><br>
+    <h1>Cotton Leaf Disease Detection Using Machine Learning and Image Processing</h1>
+    <h2 class = 'defect'>Your Cotton Plant is {{ detection }}</h2>
+    <a href="{{url_for('logout')}}">
+    <button>Logout</button></a>
+    <h2 class = 'type'>It's infected with {{ type_detection }} Disease</h2>
+    <h2 class = 'prevent'>Cure :-</h2><p>{{ cure }}</p>
+  </body>
+</html>
