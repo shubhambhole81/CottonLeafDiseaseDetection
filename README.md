@@ -1,8 +1,8 @@
-# Cotton Leaf Disease and Prediction
- Cotton Leaf Disease Detection and Prediction
+# Cotton Leaf Disease Detection and Prediction
  
-Our project uses machine learning to detect and predict diseases on cotton leaves. 
-We trained and tested our model on a dataset and deployed it as a web application using Flask.
+This project harnesses the power of machine learning to detect and predict diseases on cotton leaves. 
+After meticulously training our model on a comprehensive dataset, we rigorously tested its accuracy and reliability. 
+To make this innovative solution accessible, we've deployed it as a user-friendly web application using Flask.
 
 Technologies- Python, Scikit-Learn, Tensorflow, Flask.
 
